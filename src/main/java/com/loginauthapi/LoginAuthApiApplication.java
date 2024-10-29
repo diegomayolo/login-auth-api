@@ -1,4 +1,4 @@
-package com.login_auth_api;
+package com.loginauthapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
