@@ -2,9 +2,21 @@
 
 <p><strong>Bem-vindo ao repositório!</strong> 🎉 Neste projeto, vamos desenvolver o backend de uma aplicação Fullstack para <strong>Login e Cadastro</strong> utilizando <strong>Java Spring Framework</strong>, <strong>JWT</strong>, e <strong>Spring Security</strong> para controle de autenticação e autorização.</p>
 
+<h2>🌍 Tecnologias Utilizadas</h2>
+
+<ul>
+  <li><strong>Java Spring Boot</strong></li>
+  <li><strong>Spring Security</strong></li>
+  <li><strong>JWT (JSON Web Tokens)</strong></li>
+  <li><strong>Spring Actuator</strong></li>
+  <li><strong>Docker</strong></li>
+</ul>
+
 <h2>📂 Estrutura do Projeto</h2>
 <pre>
 .
+├── config
+│   └── prometheus.yml            # Configuração do Prometheus para coleta de métricas
 ├── src
 │   ├── main
 │   │   ├── java
@@ -16,7 +28,7 @@
 │   │   │       └── repositories   # Repositórios de acesso a dados
 │   └── resources
 │       └── application.properties # Configurações de aplicação
-└── README.md
+└── docker-compose.yml             # Configuração das imagens Docker do Prometheus e Grafana
 </pre>
 
 <h2>🚀 Iniciando o Projeto</h2>
@@ -57,12 +69,13 @@ cd nome-do-repositorio
   <li><strong>Autenticação JWT:</strong> Geração e validação de tokens de acesso.</li>
 </ul>
 
-<h2>🌍 Tecnologias Utilizadas</h2>
+<h2>📊 Monitoramento com Spring Actuator</h2>
+<p>Neste projeto utilizei o <strong>Spring Boot Actuator</strong> para coletar métricas da aplicação. Para visualizar essas métricas, as seguintes ferramentas foram utilizadas:</p>
 
 <ul>
-  <li><strong>Java Spring Boot</strong></li>
-  <li><strong>Spring Security</strong></li>
-  <li><strong>JWT (JSON Web Tokens)</strong></li>
+  <li><a href="https://prometheus.io/"><strong>Prometheus:</strong></a> Uma ferramenta de monitoramento de código aberto que coleta e armazena métricas em tempo real, permitindo a análise de desempenho e a geração de alertas.</li>
+  <li><a href="https://grafana.com/"><strong>Grafana:</strong></a> Uma plataforma de visualização que permite criar gráficos e dashboards interativos com as métricas coletadas, facilitando a análise e o monitoramento.</li>
+  <li><strong>Início dos Serviços:</strong> Execute <code>docker-compose up</code> para criar as imagens do Prometheus e Grafana. A interface gráfica do Grafana estará disponível na porta <strong>3000</strong>.</li>
 </ul>
 
 <h2>📲 Frontend Disponível para Integração</h2>
