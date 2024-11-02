@@ -1,4 +1,4 @@
-<h1>🌐 Fullstack Login e Cadastro com Java Spring</h1>
+<h1>🌐 Login e Cadastro com Java Spring</h1>
 
 <p><strong>Bem-vindo ao repositório!</strong> 🎉 Neste projeto, vamos desenvolver o backend de uma aplicação Fullstack para <strong>Login e Cadastro</strong> utilizando <strong>Java Spring Framework</strong>, <strong>JWT</strong>, e <strong>Spring Security</strong> para controle de autenticação e autorização.</p>
 
