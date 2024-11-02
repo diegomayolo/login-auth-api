@@ -30,7 +30,7 @@ public class UserController
     @GetMapping( "/{id}" )
     @Counted( value = "user.count.get.by.id", description = "Count of get user by id requests" )
     @Timed( value = "user.timed.get.by.id", longTask = true, description = "Time taken to get user by id request" )
-    public ResponseEntity<User> getUserById( @PathVariable String id ) 
+    public ResponseEntity<User> getUserById( @PathVariable Long id ) 
     {
         Optional<User> user = userRepository.findById( id );
 

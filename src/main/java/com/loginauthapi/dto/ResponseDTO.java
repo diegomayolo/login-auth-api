@@ -1,4 +1,4 @@
 package com.loginauthapi.dto;
 
-public record ResponseDTO( String id, String name, String token )
+public record ResponseDTO( Long id, String name, String token )
 {}
