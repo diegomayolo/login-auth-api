@@ -35,7 +35,7 @@ public class AuthController
         {
             String token = tokenService.generateToken( user );
             
-            return ResponseEntity.ok( new ResponseDTO( user.getName(), token ) );
+            return ResponseEntity.ok( new ResponseDTO( user.getId(), user.getName(), token ) );
         }
         
         return ResponseEntity.badRequest().build();
@@ -57,7 +57,7 @@ public class AuthController
 
             String token = tokenService.generateToken( newUser );
 
-            return ResponseEntity.ok( new ResponseDTO( newUser.getName(), token ) );
+            return ResponseEntity.ok( new ResponseDTO( newUser.getId(), newUser.getName(), token ) );
         }
         
         return ResponseEntity.badRequest().build();
